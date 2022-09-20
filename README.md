@@ -1,10 +1,10 @@
 # Site clone cinema 🎬
 
-### Objetivo
+###📌 Objetivo
 
 Reproduzir o site do cinema da minha cidade.
 
-### Tecnologias utilizadas
+###📌 Tecnologias utilizadas
 
 - HTML
 - CSS
