@@ -1,0 +1,617 @@
+.cabecalho{
+    background-color: rgb(194, 54, 54);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 170px;  
+    padding: 15px;
+    color: aliceblue;   
+
+}
+
+nav {
+   background-color: #a80e08;
+   width: 1000px;
+   border-radius: 5px;
+   margin: 3px 30px;
+   
+}
+
+.cabecalho_logo{
+    border-radius: 3px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;    
+}
+
+nav li{
+    display: flex;  
+}
+
+.cabecalho_menu img{
+    width: 120px;
+    
+}
+
+.cabecalho_menu:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#cabecalho_localizacao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.icone-loc{
+    margin-right: 5px;
+}
+
+.seletor{
+    background-color: #a80e08;
+    border: none;
+    color: aliceblue;
+    font-size: 15px;
+    height: 35px;
+}
+
+.divisao{
+    border-top: 1px solid white;
+    padding-bottom: 1.5px;
+}
+
+select:hover{
+    background-color: white;
+    color: rgb(81, 81, 81) ;
+}
+
+.botao1{
+    width: 220px;
+    height: 30px;
+    font-size: 12px;
+    color: #530401;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.455);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botao1:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+}
+
+.em_cartaz, .em_breve{
+    display: flex;
+    text-align:start;
+    padding: 30px 235px 30px 218px;
+    justify-content: space-between;
+}
+
+.em_cartaz_cartazes, .em_breve_cartazes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+    
+}
+
+.cartaz{
+    display: flex;
+    padding-right: 10px;
+    border-radius: 3px;
+
+}
+
+.cartaz:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.cartaz:last-child{
+    padding: none;
+}
+
+.filmes_titulo{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: rgb(85, 84, 84);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.botao2, .botao4{
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #a70600;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botao2:hover,.botao4:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #d13833;
+ }
+
+ .promocoes{
+    display: flex;
+    position: relative;
+    background: url(./imagens/pipoca.jpg) no-repeat center /cover;
+    background-position: top 30% left 10%;
+    height: 350px;
+    width: 100vw;
+    margin-bottom: 50px;
+    box-shadow: inset 600px 500px #53040166;
+
+ }
+
+ .promocoes_titulo{
+    position: absolute;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    top: 20%;
+    left: 5%;
+    
+ }
+
+ .promo_texto{
+    position: absolute;
+    width: 35%;
+    color: white;
+    line-height: 150%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    top: 32%;
+    left: 5%;
+ }
+
+ .botao3{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 250px;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #530401;
+ }
+
+ .botao3:hover{
+    transition: 0.5s;
+    background-color: #bdbdbd;
+ }
+
+ /* Rodapé  */
+
+ .rodape{
+    background-color: #333;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 150px;
+ }
+
+ .sobre{
+    width: 40%;
+    margin-right: 100px;
+ }
+
+ .rodape_botao{
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #272727;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 30px;
+
+ }
+ .rodape_botao:last-child{
+    margin-left: none;
+ }
+
+ .rodape_botao:hover{
+    transition: 0.3s;
+    background-color: #a70600;
+   
+ }
+
+ .link{
+    width: 50%;
+ }
+
+ .links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 209px;
+    height: 209px;
+    padding-top: 20px;
+ }
+
+ .logo{
+    width: 80px;
+    height: 80px;
+ }
+
+ .logo_maior{
+    width: 161px;
+ }
+
+ .rodape_texto{
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    line-height: 2rem;
+ }
+
+ .text_cine{
+    font-size: 28px;
+    color: rgb(255, 254, 254);
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 50px;
+ }
+
+.text_sobre, .text_links{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ba0a04;
+    font-weight: 800;
+ }
+
+ .rodape_divisao{
+    border-top: 5px solid rgb(118, 116, 116);
+    padding-bottom: 1px;
+}
+
+p{
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+/*Página filme Orfã 2 */
+
+.descricao_orfa{
+    background: url(./imagens/orfa2.jpg) no-repeat center /cover;
+    height: auto;
+    padding: 70px;
+    
+}
+
+.descricao_titulo{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(85, 84, 84);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.descricao_txt{
+    color: #242424;
+    width: 45%;
+    font-size: 15px;
+    line-height: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.descricao_botao{
+    background: none;
+    border: 1px solid #c7b8b8;
+    border-radius: 3px;
+}
+
+/*Página filme Um lugar bem longe daqui */
+
+.descricao_umLugar{
+    background: url(./imagens/um_lugar_.png) no-repeat center /cover;
+    height: auto;
+    padding: 70px;
+    box-shadow: inset 600px 500px #ffffff26;    
+}
+
+.descricao_titulo_umLugar{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e2e2e2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.descricao_txt_umLugar{
+    color: #ffffff;
+    width: 35%;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.descricao_botao_umLugar{
+    background: none;
+    border: 1px solid #61695c;
+    border-radius: 3px;
+    color: #bdbdbd;
+}
+
+/*Página filme Homem Aranha */
+
+.descricao_homemAranha{
+    background: url(./imagens/homemaranha.jpg) no-repeat center /cover;
+    height: 350px;
+    padding: 70px;
+    box-shadow: inset 600px 500px #ffffff26;    
+}
+
+.descricao_titulo_homemAranha{
+    font-size: 32px;
+    margin-bottom: 20px;
+    width: 28%;
+    color: rgb(85, 84, 84);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.descricao_txt_homemAranha{
+    color: #0f0f0f;
+    width: 35%;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.descricao_botao_homemAranha{
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background: none;
+}
+
+/*Página filme Ingresso para o paraíso */
+
+.descricao_ingresso{
+    background: url(./imagens/ingresso-para-paraiso.jpg) no-repeat center /cover;
+    background-position: top 10% left 10%;
+    height: auto;
+    padding: 70px;
+    box-shadow: inset 600px 500px #ffffff14;    
+}
+
+.descricao_titulo_ingresso{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e2e2e2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.descricao_txt_ingresso{
+    color: #ffffff;
+    width: 35%;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.descricao_botao_ingresso{
+    background: none;
+    border: 1px solid #61695c;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+/*Página filme Minha família perfeita */
+
+.descricao_familia{
+    height: auto;
+    padding: 70px;
+    
+}
+
+/*Página Programação, Filmes em breve e em cartaz */
+
+.em-breve{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 150px;
+}
+
+.em-breve_titulo, .lei_titulo, .contato_titulo, .bomboniere_titulo{
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ba0a04;
+    font-weight: 700;
+    margin-bottom: 18px;
+
+}
+
+.em-breve_texto, .bomboniere_texto{
+    color: #202020;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.filmes{
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 3px;
+    display: flex;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px
+}
+
+.em-breve_cartaz{
+    display: flex;
+    padding-right: 10px;
+    border-radius: 3px;
+
+}
+
+.titulo_filme{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ba0a04;
+    font-weight: bold;    
+}
+
+.estreia{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5b5b5b;
+    font-weight: 510;
+    margin-top: 15px;
+}
+
+.sinopse, .lei_texto, .contato_texto, .bomboniere_texto{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 1.3rem;
+}
+
+.seletor_prog{
+    background-color: none;
+    border: none;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.botao5{
+    width: 140px;
+    height: 30px;
+    font-size: 13px;
+    background-color: #a70600;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botao5:hover{
+    transition: 0.5s;
+    background-color: #d74e49;
+ }
+
+ /* Página Bomboniere */
+
+ .bomboniere_container{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 200px;
+ }
+
+ .combos, .pipoca, .bebidas{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(240, 239, 239);
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 1200px;
+    height: 200px;
+ }
+ 
+ .itens_pipoca, .itens_bebidas, .itens_combo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+
+ }
+
+ .bomboniere_itens{
+    margin: 10px;
+    background-color: rgb(227, 225, 225);
+    padding: 8px;
+    height: 30px;
+ }
+
+
+ /* Página Lei da Classificação Indicativa */
+
+ .lei_container, .contato_container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 150px;
+}
+
+.lei_subtitulo, .contato_subtitulo, .bomboniere_subtitulo{
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    color: #353434;
+    margin: 0 0 2rem 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table{
+    border: 1.2px solid rgb(169, 168, 168);
+    border-radius: 5px;
+    margin: 50px 300px;
+    width: 65%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th{
+    font-size: 18px;
+    padding: 18px;
+    text-align: start;
+    font-weight: bold;
+}
+
+td{
+    padding: 18px;
+    vertical-align: middle;
+    border: 1.2px solid rgb(169, 168, 168);;
+    
+}
+
+.col_icones{
+    width: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+ 
