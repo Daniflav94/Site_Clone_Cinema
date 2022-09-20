@@ -1,4 +1,4 @@
-# Site Clone Cinema
+# Site clone cinema
 
 ### Objetivo
 
