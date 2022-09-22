@@ -1,1 +1,16 @@
-# Site_Clone_Cinema
+# Site clone cinema 🎬
+
+### 📌 Objetivo
+
+Reproduzir o site do cinema da minha cidade.
+
+### 📌 Tecnologias utilizadas
+
+- HTML
+- CSS
+
+### 📌 Link para acesso do site:
+
+https://daniflav94.github.io/Site_Clone_Cinema/
+
+
