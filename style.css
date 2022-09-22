@@ -1,3 +1,7 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .cabecalho{
     background-color: rgb(194, 54, 54);
     display: flex;
@@ -68,6 +72,7 @@ nav li{
 select:hover{
     background-color: white;
     color: rgb(81, 81, 81) ;
+    border-radius: 4px;
 }
 
 .botao1{
@@ -124,7 +129,6 @@ select:hover{
     font-size: 32px;
     margin-bottom: 10px;
     color: rgb(85, 84, 84);
-    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
 }
 
@@ -161,7 +165,6 @@ select:hover{
  .promocoes_titulo{
     position: absolute;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 32px;
     text-align: left;
@@ -175,7 +178,6 @@ select:hover{
     width: 35%;
     color: white;
     line-height: 150%;
-    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 500;
     top: 32%;
@@ -242,6 +244,7 @@ select:hover{
 
  .link{
     width: 50%;
+
  }
 
  .links{
@@ -251,6 +254,7 @@ select:hover{
     width: 209px;
     height: 209px;
     padding-top: 20px;
+   
  }
 
  .logo{
@@ -264,7 +268,6 @@ select:hover{
 
  .rodape_texto{
     color: aliceblue;
-    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     padding-top: 20px;
     line-height: 2rem;
@@ -273,13 +276,11 @@ select:hover{
  .text_cine{
     font-size: 28px;
     color: rgb(255, 254, 254);
-    font-family: 'Open Sans', sans-serif;
     margin-right: 50px;
  }
 
 .text_sobre, .text_links{
     font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
     color: #ba0a04;
     font-weight: 800;
  }
@@ -307,7 +308,6 @@ p{
     font-size: 32px;
     margin-bottom: 20px;
     color: rgb(85, 84, 84);
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -316,7 +316,6 @@ p{
     width: 45%;
     font-size: 15px;
     line-height: normal;
-    font-family: 'Open Sans', sans-serif;
 }
 
 strong{
@@ -342,7 +341,6 @@ strong{
     font-size: 32px;
     margin-bottom: 20px;
     color: #e2e2e2;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -352,7 +350,6 @@ strong{
     font-size: 15px;
     line-height: normal;
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .descricao_botao_umLugar{
@@ -376,7 +373,6 @@ strong{
     margin-bottom: 20px;
     width: 28%;
     color: rgb(85, 84, 84);
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -386,7 +382,6 @@ strong{
     font-size: 15px;
     line-height: normal;
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .descricao_botao_homemAranha{
@@ -409,7 +404,6 @@ strong{
     font-size: 32px;
     margin-bottom: 20px;
     color: #e2e2e2;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -419,7 +413,6 @@ strong{
     font-size: 15px;
     line-height: normal;
     font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .descricao_botao_ingresso{
@@ -433,8 +426,7 @@ strong{
 
 .descricao_familia{
     height: auto;
-    padding: 70px;
-    
+    padding: 70px;   
 }
 
 /*Página Programação, Filmes em breve e em cartaz */
@@ -445,18 +437,16 @@ strong{
     padding: 70px 150px;
 }
 
-.em-breve_titulo, .lei_titulo, .contato_titulo, .bomboniere_titulo{
+.em-breve_titulo, .lei_titulo, .contato_titulo, .bomboniere_titulo, .institucional_titulo, .eventos_titulo, .promo_titulo{
     font-size: 42px;
-    font-family: 'Open Sans', sans-serif;
     color: #ba0a04;
     font-weight: 700;
     margin-bottom: 18px;
 
 }
 
-.em-breve_texto, .bomboniere_texto{
+.em-breve_texto{
     color: #202020;
-    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
 
@@ -483,22 +473,19 @@ strong{
 
 .titulo_filme{
     font-size: 32px;
-    font-family: 'Open Sans', sans-serif;
     color: #ba0a04;
     font-weight: bold;    
 }
 
 .estreia{
     font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
     color: #5b5b5b;
     font-weight: 510;
     margin-top: 15px;
 }
 
-.sinopse, .lei_texto, .contato_texto, .bomboniere_texto{
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+.sinopse, .lei_texto, .contato_texto, .bomboniere_texto, .institucional_texto, .eventos_texto{
+    font-size: 16px;
     color: #000000;
     font-weight: 500;
     margin-top: 15px;
@@ -533,12 +520,6 @@ strong{
 
  /* Página Bomboniere */
 
- .bomboniere_container{
-    display: flex;
-    flex-direction: column;
-    margin: 70px 200px;
- }
-
  .combos, .pipoca, .bebidas{
     display: flex;
     flex-direction: row;
@@ -567,18 +548,18 @@ strong{
 
  /* Página Lei da Classificação Indicativa */
 
- .lei_container, .contato_container{
+ .lei_container, .contato_container, .eventos_container, .bomboniere_container, .promo_container{
     display: flex;
     flex-direction: column;
     margin: 50px 150px;
+
 }
 
-.lei_subtitulo, .contato_subtitulo, .bomboniere_subtitulo{
+.lei_subtitulo, .contato_subtitulo, .bomboniere_subtitulo, .eventos_subtitulo{
     font-size: 27px;
-    font-family: 'Open Sans', sans-serif;
     color: #353434;
     margin: 0 0 2rem 0;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 table{
@@ -586,7 +567,6 @@ table{
     border-radius: 5px;
     margin: 50px 300px;
     width: 65%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 th{
@@ -608,7 +588,132 @@ td{
     text-align: center;
 }
 
+/* Página Contato */
 
+form{
+    margin-left: 150px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.campos_form{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-bottom: 35px;
+    margin-right: 35px;
+}
+
+.campo_coment{
+    width: 1100px;
+    height: 200px;
+}
+
+.label_form{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #545353;
+}
+
+.checkbox{
+    color: #353434;
+}
+
+input{
+    background-color: #f0f0f0de;
+    border: none;
+    border-radius: 4px;
+    height: 22px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+input:focus{
+    background-color: #d7d5d5de;
+}
+
+textarea{
+    margin-top: 10px;
+    background-color: #f0f0f0de;
+    border: none;
+    border-radius: 4px;
+}
+
+.botao_formulario{
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+    background-color: #148521;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin: 40px 150px;
+    cursor: pointer;   
+}
+
+.botao_formulario:hover{
+    background-color: #0f5f19;
+}
+
+/* Página Eventos */
+
+.eventos_campos_form{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-bottom: 50px;
+    margin-right: 35px;
+
+}
+
+.eventos_campos_form_finalidade{
+    display: flex;
+    flex-direction: column;
+    width: 770px;
+
+}
+
+.radio{
+    display: flex;
+}
+
+.label_radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    font-size: 14px;
+}
+
+placeholder{
+    color: #8e8e8e;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.select_eventos{
+    background-color: #f0f0f0de;
+    border: none;
+    border-radius: 4px;
+    height: 42px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.select_eventos:hover{
+    background-color: #f0f0f0de;
+}
+
+/* Página Outros */
+
+
+
+.todos-pagam-meia{
+    margin: 50px 150px;
+
+}
 
 
 

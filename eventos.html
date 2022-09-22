@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <title>Cinema Shopping Mauá</title>
 </head>
 <body>
@@ -18,13 +21,13 @@
                 <ul>
                     <li class="cabecalho_menu"><a href="./programacao.html"><img src="./imagens/icones/icone-progr.jpg"></a></li>
                     <li class="cabecalho_menu"><a href="./bomboniere.html"><img src="./imagens/icones/icone-bomb.jpg"></a></li>
-                    <li class="cabecalho_menu"><a href=""><img src="./imagens/icones/icone-outros.jpg"></a></li>
-                    <li class="cabecalho_menu"><a href=""><img src="./imagens/icones/icone-contato.jpg"></a></li>
+                    <li class="cabecalho_menu"><a href="./outros.html"><img src="./imagens/icones/icone-outros.jpg"></a></li>
+                    <li class="cabecalho_menu"><a href="./contato.html"><img src="./imagens/icones/icone-contato.jpg"></a></li>
                     <div id="cabecalho_localizacao">
                         <img src="./imagens/icones/marcador.svg" width="20px" class="icone-loc">
                         <select class="seletor">
-                            <option>Selecione sua localização</option>
-                            <option>Mauá - SP</option>
+                            <option selected disabled>Selecione sua localização</option>
+                            <option value="maua-sp">Mauá - SP</option>
                         </select>
                         <div  class="divisao">
                             <button class="botao1">Ver programação</button>
@@ -35,7 +38,76 @@
         </section> 
     </header>
     <main>
-        
+        <section class="eventos_container">
+            <h1 class="eventos_titulo">Eventos Especiais</h1>
+            <h2 class="eventos_subtitulo">Transforme seu evento em uma história de cinema</h2>
+            <p class="eventos_texto">Que tal fechar uma sala para seus convidados no dia do seu aniversário ou então fazer uma pré-estreia para seus clientes preferenciais?<br>
+                O Cine Araújo oferece opções especiais tanto para empresas como para os fãs de cinema. <br>
+                Preencha o formulário abaixo para participar das nossas promoções e receber informações sobre os lançamentos e novidades.</p>
+        </section>
+        <section>
+            <form action="">
+                <div class="eventos_campos_form">
+                    <label for="nome" class="label_form">Nome:</label>
+                    <input id="nome" type="text" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="email" class="label_form">Email:</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="tel" class="label_form">Telefone:</label>
+                    <input id="tel" type="text" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="end" class="label_form">Endereço:</label>
+                    <input id="end" type="text" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="cidade" class="label_form">Cidade:</label>
+                    <input id="cidade" type="text" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="estado" class="label_form">Estado:</label>
+                    <input id="estado" type="text" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="estado" class="label_form">Tipo de evento:</label>
+                    <select name="tipo-evento" id="tipo-evento" class="select_eventos">
+                        <option value="empresa" class="option_eventos">Premier para empresas</option>
+                        <option value="pessoa-fisica">Premier para pessoa física</option>
+                    </select>                   
+                </div>
+                <div class="eventos_campos_form_finalidade">
+                    <label for="finalidade" class="label_form">Finalidade:</label>
+                    <input id="finalidade" type="text" required>
+                    <fieldset class="radio">                   
+                        <label for="locacao" class="label_radio"><input type="radio" name="radio" value="locacao" id="locacao">Locação</label>
+                        <label for="assistir" class="label_radio"><input type="radio" name="radio" value="assistir" id="assistir">Assistir filme</label>
+                    </fieldset>
+                </div>              
+                <div class="eventos_campos_form">
+                    <label for="data" class="label_form">Data do evento:</label>
+                    <input id="data" type="date" required>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="quantidade" class="label_form">Quantidade de pessoas:</label>
+                    <input id="quantidade" type="text" required >
+                    <placeholder>Ex: 50; 120; 200.</placeholder>
+                </div>
+                <div class="eventos_campos_form">
+                    <label for="duracao" class="label_form">Duração:</label>
+                    <input id="duracao" type="text" required >
+                    <placeholder>Ex: 2h; 3:45h; 5 horas.</placeholder>
+                </div>
+                
+                <div class="checkbox">
+                    <input id="info" type="checkbox" checked>
+                    <label for="info" class="label_checkbox">Quero receber informativos do Cine Araújo.</label>
+                </div>               
+            </form>
+            <button class="botao_formulario">Enviar formulário</button>
+        </section>
     </main>
     <footer>
         <section class="rodape">
