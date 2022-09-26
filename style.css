@@ -251,10 +251,9 @@ select:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 209px;
-    height: 209px;
-    padding-top: 20px;
-   
+    width: 320px;
+    height: 165px;
+    margin-top: 20px;
  }
 
  .logo{
@@ -548,7 +547,7 @@ strong{
 
  /* Página Lei da Classificação Indicativa */
 
- .lei_container, .contato_container, .eventos_container, .bomboniere_container, .promo_container{
+ .lei_container, .contato_container, .eventos_container, .bomboniere_container, .promo_container, .precos_container{
     display: flex;
     flex-direction: column;
     margin: 50px 150px;
@@ -708,12 +707,57 @@ placeholder{
 
 /* Página Outros */
 
-
-
 .todos-pagam-meia{
     margin: 50px 150px;
+    display: flex;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 5px;
+    padding: 10px;
 
 }
+
+.todos-pagam-meia:hover{
+    background-color: #ce241e; 
+
+}
+
+.todos-pagam-meia:hover h2{
+    color: white;
+}
+
+.todos-pagam-meia:hover p{
+    color: white;
+}
+
+.todos-pagam-meia:hover .promocoes_select{
+    background-color: white;
+    color: #2b2b2b;
+    transition: 0.4s;
+}
+
+.promocoes_subtitulo{
+    font-size: 28px;
+    font-weight: 600;
+    color: #767575;
+    margin-top: 15px;
+}
+
+.img_todos-pagam-meia{
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.promocoes_select{
+    background-color: #c60a03;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 290px;
+    border-radius: 5px;
+    border: none;
+}
+
 
 
 
