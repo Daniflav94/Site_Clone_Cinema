@@ -2,7 +2,7 @@
 
 ### 📌 Objetivo
 
-Reproduzir o site do cinema da minha cidade.
+Reproduzir o site do cinema da minha cidade - CineAraújo
 
 ### 📌 Tecnologias utilizadas
 
