@@ -178,9 +178,8 @@ select:hover{
     width: 35%;
     color: white;
     line-height: 150%;
-    font-size: 22px;
-    font-weight: 500;
-    top: 32%;
+    font-size: 20px;
+    top: 38%;
     left: 5%;
  }
 
@@ -229,7 +228,7 @@ select:hover{
     margin-top: 10px;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 
  }
  .rodape_botao:last-child{
@@ -254,6 +253,11 @@ select:hover{
     width: 320px;
     height: 165px;
     margin-top: 20px;
+    padding: 0;
+ }
+
+ .links li:hover{
+    opacity: 0.6;
  }
 
  .logo{
@@ -262,7 +266,7 @@ select:hover{
  }
 
  .logo_maior{
-    width: 161px;
+    width: 160px;
  }
 
  .rodape_texto{
@@ -276,6 +280,7 @@ select:hover{
     font-size: 28px;
     color: rgb(255, 254, 254);
     margin-right: 50px;
+    margin-bottom: none;
  }
 
 .text_sobre, .text_links{
@@ -315,6 +320,7 @@ p{
     width: 45%;
     font-size: 15px;
     line-height: normal;
+    margin-top: 10px;
 }
 
 strong{
@@ -348,7 +354,7 @@ strong{
     width: 35%;
     font-size: 15px;
     line-height: normal;
-    font-weight: 500;
+    margin-top: 10px;
 }
 
 .descricao_botao_umLugar{
@@ -381,6 +387,7 @@ strong{
     font-size: 15px;
     line-height: normal;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .descricao_botao_homemAranha{
@@ -412,6 +419,7 @@ strong{
     font-size: 15px;
     line-height: normal;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .descricao_botao_ingresso{
@@ -541,7 +549,9 @@ strong{
     margin: 10px;
     background-color: rgb(227, 225, 225);
     padding: 8px;
-    height: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
  }
 
 
@@ -575,10 +585,10 @@ th{
     font-weight: bold;
 }
 
-td{
+table td{
     padding: 18px;
     vertical-align: middle;
-    border: 1.2px solid rgb(169, 168, 168);;
+    border: 1px solid rgb(169, 168, 168);;
     
 }
 
@@ -594,6 +604,7 @@ form{
     width: auto;
     display: flex;
     flex-wrap: wrap;
+    height: auto;
 }
 
 .campos_form{
@@ -605,8 +616,12 @@ form{
 }
 
 .campo_coment{
-    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    width: 1130px;
     height: 200px;
+    margin-bottom: 35px;
+    margin-right: 35px;
 }
 
 .label_form{
@@ -617,13 +632,15 @@ form{
 
 .checkbox{
     color: #353434;
+    display: flex;
+    align-items: center;
 }
 
 input{
     background-color: #f0f0f0de;
     border: none;
     border-radius: 4px;
-    height: 22px;
+    height: 35px;
     font-size: 15px;
     padding: 10px;
 }
@@ -735,6 +752,12 @@ placeholder{
     transition: 0.4s;
 }
 
+.todos-pagam-meia:hover .botao_verificarPrecos{
+    background-color: white;
+    color: #2b2b2b;
+    transition: 0.4s;
+}
+
 .promocoes_subtitulo{
     font-size: 28px;
     font-weight: 600;
@@ -757,6 +780,118 @@ placeholder{
     border-radius: 5px;
     border: none;
 }
+
+.precos_container{
+    display: none;
+}
+
+.esconder{
+    display: none;
+}
+
+.mostrar{
+    display: flex !important;
+}
+
+.botao_verificarPrecos{
+    background-color: #c60a03;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 25px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 456px;
+    left: 780px;
+    display: none;  
+    margin: 0;  
+}
+
+.precos_container{
+    display: none;
+    flex-direction: column;
+    height: auto;
+}
+
+.precos_caixa{
+    display: flex;
+    height: 270px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: rgb(232, 231, 231);
+}
+
+.precos_caixa img{
+    border-radius: 5px;
+    margin-right: 85px;
+}
+
+.precos_container h2{
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.seg-sex, .sab-dom{
+    width: 35%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.obs{
+    color: rgb(90, 90, 90);
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.caixinhas_precos{
+    display: flex;
+    margin-top: 20px;
+}
+
+.caixinhas_precos h3{
+    font-size: 15px;
+}
+
+.preco_inteira{
+    background-color: rgb(200, 200, 200);
+    width: 150px;
+    height: 70px;
+    align-self: flex-end;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.preco_meia{
+    background-color: #ce0d06;
+    width: 150px;
+    height: 110px;
+    border-radius: 8px 8px 8px 0;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Página Localização*/
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 150px;
+    
+}
+
+#accordion::after {
+    background: none;
+
+}
+
+
 
 
 

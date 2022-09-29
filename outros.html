@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Cinema Shopping Mauá</title>
 </head>
 <body>
@@ -51,57 +52,167 @@
                         <option selected disabled>SELECIONE UMA CIDADE</option>
                         <option value="maua-sp" class="promocoes_opcao">Mauá - SP</option>
                     </select>
+                    <div class="botao">
+                        <button class="botao_verificarPrecos" onclick="mostraPrecos()">VERIFIQUE OS PREÇOS DA SUA CIDADE</button>
+                    </div>
+                    
                 </div>               
             </div>  
             <div >
                 <section class="precos_container">
-                    <div class="precos_normal">
+                    <div class="precos_caixa">
                         <img src="./imagens/precos-maua.jpg" alt="" width="270px">
                         <div class="seg-sex">
-                            
+                            <h2>Segunda a sexta:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 36,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 18,00</p>
+                                </div>
+                            </div>
+                            <p class="obs">Matinê e noite: mesmos valores</p>
                         </div>
                         <div class="sab-dom">
-                            
+                            <h2>Sábado, domingo e feriados:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 42,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 21,00</p>
+                                </div>
+                            </div>   
                         </div>
                         
                     </div>
-                    <div class="precos-3d">
+                    <div class="precos_caixa">
                         <img src="./imagens/3d-precos.jpg" alt="" width="270px">
                         <div class="seg-sex">
-                            
+                            <h2>Segunda a sexta:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 42,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 21,00</p>
+                                </div>
+                            </div>
+                            <p class="obs">Matinê e noite: mesmos valores</p>
                         </div>
                         <div class="sab-dom">
-                            
+                            <h2>Sábado, domingo e feriados:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 48,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 24,00</p>
+                                </div>
+                            </div>
+                           
                         </div>                  
                         
                     </div>
-                    <div class="precos-premium">
+                    <div class="precos_caixa">
                         <img src="./imagens/premium-precos.jpg" alt="" width="270px">
                         <div class="seg-sex">
-                            
+                            <h2>Segunda a sexta:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 40,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 20,00</p>
+                                </div>
+                            </div>
+                            <p class="obs">Matinê e noite: mesmos valores</p>
                         </div>
                         <div class="sab-dom">
-                            
+                            <h2>Sábado, domingo e feriados:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 46,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$23,00</p>
+                                </div>
+                            </div>
                         </div>
                             
                     </div>
-                    <div class="precos-vip">
+                    <div class="precos_caixa">
                         <img src="./imagens/vip-precos.jpg" alt="" width="270px">
                         <div class="seg-sex">
-                            
+                            <h2>Segunda a sexta:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 46,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 23,00</p>
+                                </div>
+                            </div>
+                            <p class="obs">Matinê e noite: mesmos valores</p>
                         </div>
                         <div class="sab-dom">
-                            
+                            <h2>Sábado, domingo e feriados:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 52,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 26,00</p>
+                                </div>
+                            </div>
                         </div>
                             
                     </div>
-                    <div class="precos-vip-3d">
+                    <div class="precos_caixa">
                         <img src="./imagens/3d-vip-precos.jpg" alt="" width="270px">
                         <div class="seg-sex">
-                            
+                            <h2>Segunda a sexta:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 50,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong> <br><br> MEIA</h3>
+                                    <p>R$ 25,00</p>
+                                </div>
+                            </div>
+                            <p class="obs">Matinê e noite: mesmos valores</p>
                         </div>
                         <div class="sab-dom">
-                            
+                            <h2>Sábado, domingo e feriados:</h2>
+                            <div class="caixinhas_precos">
+                                <div class="preco_inteira">
+                                    <h3>INTEIRA</h3>
+                                    <p>R$ 56,00</p>
+                                </div>
+                                <div class="preco_meia">
+                                    <h3><strong>Promoção</strong><br><br> MEIA</h3>
+                                    <p>R$ 28,00</p>
+                                </div>
+                            </div>
                         </div>
                             
                     </div>
@@ -114,15 +225,15 @@
     <footer>
         <section class="rodape">
             <div class="sobre">
-                <h2 class="text_cine">CINE ARAÚJO</h2><BR>
+                <h2 class="text_cine">CINE ARAÚJO</h2>
                 <h2 class="text_sobre">SOBRE NÓS</h2>
                 <p class="rodape_texto">Nosso objetivo é levar a magia do cinema para várias cidades e nossa principal preocupação é transformar um simples filme em uma experiência única para nossos clientes. Para isso estamos investindo constantemente em conforto e qualidade. Se você deseja entrar em contato, fique a vontade e utilize nossos canais abaixo:</p>
                 <a href="./eventos.html"><button class="rodape_botao">Eventos</button></a>
-                <button class="rodape_botao">Localização</button>
+                <a href="./localizacao.html"><button class="rodape_botao">Localização</button></a>
                 <a href="./institucional.html"><button class="rodape_botao">Institucional</button></a>
             </div>
             <div class="link">
-                <h2 class="text_cine">CINE ARAÚJO</h2><BR>
+                <h2 class="text_cine">CINE ARAÚJO</h2>
                 <h2 class="text_links">LINKS</h2>
                 <ul class="links">
                     <li ><a href="https://www.instagram.com/cinearaujooficial/" target="_blank"><img src="./imagens/icones/insta.jpg" class="logo"></a></li>

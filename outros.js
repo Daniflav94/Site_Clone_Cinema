@@ -1,9 +1,10 @@
-selecioneCidade.onchange = function(){
-    let opcao = document.querySelector('.promocoes_opcao')
-    let botao = document.querySelector('.promocoes_select')
+onchange = function(){
+    document.querySelector('.promocoes_opcao')
+    document.querySelector('.promocoes_select').classList.toggle("esconder")
+    document.querySelector('.botao_verificarPrecos').classList.toggle("mostrar")
 
-    opcao.innerHTML = `<button>CONFIRA OS PREÇOS NA SUA CIDADE</button>`
-    botao.style.width = '350px'
-   
+}
 
+function mostraPrecos(){
+    document.querySelector('.precos_container').classList.toggle("mostrar")
 }
