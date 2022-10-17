@@ -8,6 +8,7 @@ Reproduzir o site do cinema da minha cidade - CineAraújo
 
 - HTML
 - CSS
+- Bootstrap
 
 ###  Link para acesso do site:
 
