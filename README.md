@@ -6,9 +6,9 @@ Reproduzir o site do cinema da minha cidade - CineAraújo
 
 ###  Tecnologias utilizadas
 
-- HTML
-- CSS
-- Bootstrap
+- HTML, CSS;
+- Bootstrap;
+- JavaScript.
 
 ###  Link para acesso do site:
 
